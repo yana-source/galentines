@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Sanskriti 💗</title>
+  <link href="https://font.download/font/cormorant-garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🔐 This letter is locked</h2>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+<button onclick="unlock()">Unlock</button>
+<p id="error"></p>
+
+<div id="letter" class="hidden paper">
+    <div class="paper letter">
+ <div class="polaroid">
+  <img src="images/sanskriti.jpeg">
+</div>
+
+    <h2>Dear Sanskriti,</h2>
+
+    <p>
+I still remember the first day I met you. You had joined school a bit late, and you sat with me, Raahi, Gaayatri and Shrishti near the window. I remember thinking, "Damn, that's a tall girl." You seemed nervous and unsure, and you didn't know what exactly to do. On the second day, it was raining quite heavily. It was dark outside, the sky was grey, and all the lights in the classroom were switched on. We decided that would be the best time to get to know you. You told us about yourself - where you were from, who were your best friends in Pine Mount, and lots of other things. One of us said that you look really pretty. You tried to maintain your composure, but I could tell you seem quite flustered. Then we decided to play 'ham, cheese, hamburger', and when Gaayatri and Shrishti didn't know what it was, we all collectively settled that we would teach them. That was the beginning of our friendship. And it's been a rollercoaster ever since.<br><br>
+There are a million words in the world, but none of them feel big enough to hold what you mean to me. How lucky I am to have found someone who feels like home, like safety, like the warmest light on the darkest days. You are the kind of person hearts search for - a rare, once-in-a-lifetime soul, and somehow, the universe was kind enough to place you in my life. I'll always remember your small quips and quirks: how you end every message with a '~', how you fall asleep in class every single day, how you eat food under the desk when the teacher isn't there. All these little things make you so special and make you,<strong> you</strong>. I remember when Sarthak had a crush on you, and we all tried to get you both together. The next day you told me you didn't feel a spark, so I let it go. The others went and told Sarthak and were very mad on his behalf, and I remember telling him, "It's okay, she's just a girl. There are plenty of fish in the sea," just so they would back off from being even more mean to you. I remember when you had a crush on Te-a, and we had to snap you out of it because he was with Diksha at the time. I remember when you had a crush on Medon, and you nicknamed him 'black cat' because of his hair. I remember you having a tiny crush on Ashutosh at the same time as me, and I felt horrible about it because he's such a terrible person. Thank goodness none of us ended up with him. I remember when I had a crush on Ezra, and you were as delusional as me. I remember when I had a falling out with Shrishti, and you were there by my side the entire time. I remember when everyone in the group started treating you not so well, and I remember you finally found comfort in Zara and the rest. And I couldn't be more proud of you for making that decision. You became the most unfiltered, unapologetic version of yourself, and you shone. I remember when I became captain. I remember how you were there encouraging me when I had a crush on Ayush. I remember everything, and I'll always remember you. You love with a kind of softness that the world doesn't always deserve, and I hope you know how endlessly cherished you are. If I could, I would bottle up all the love I have for you and pour it into your heart on the days you forget your own worth. Because you are worth everything, more than I could ever put into words.
+<br><br>
+No matter where life takes us, no matter the distance or years that pass, you will always have me. In every laugh, in every late-night gossip, in every moment we've shared - I hope you know that you are loved by me in the purest, most unwavering way. <br><br>
+Always + forever,<br>
+Yana ❤︎
+  </p>
+  </div>
+
+  <script>
+function unlock() {
+  const password = "1769";  // Sanskriti's password
+  const input = document.getElementById("passwordInput").value.trim();
+  const errorMessage = document.getElementById("error");
+  if (input === password) {
+    errorMessage.innerText = "";
+    document.getElementById("letter").classList.remove("hidden");
+  } else {
+    errorMessage.innerText = "Wrong password bih😛 Try again";
+  }
+}
+</script>
+
+</body>
+</html>

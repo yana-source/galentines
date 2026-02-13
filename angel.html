@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Angel 💗</title>
+  <link href="https://font.download/font/cormorant-garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🔐 This letter is locked</h2>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+<button onclick="unlock()">Unlock</button>
+<p id="error"></p>
+
+<div id="letter" class="hidden paper">
+  <div class="paper letter">
+ <div class="polaroid">
+  <img src="images/angel.JPG">
+</div>
+
+  <h2>Dear Angel,</h2>
+
+  <p>
+Where do I even begin? I don't even clearly remember the first time I met you. It was probably after Kim or Ametei introduced me to you. I remember trying to ease into the friendship by calling you 'Angle' during lunch breaks, just to pull your leg. I remember feeling slightly awkward around you because I didn't know you that well yet. It's hard to put into words what someone means to you, but you are one of my favourite human beings that have ever existed. At the time, I didn't know meeting you would have such an impact on my life, but now I do. <br><br>
+I love you for so many reasons. I love you because you're genuine, sentimental, hilarious and sweet. You've always put your priorities above everything else, and I'll always admire that about you. I don't think I've had a single bad moment with you. You've been there through everything: when I first had a crush on Ezra, when I had a falling out with Shrishti, when I had a falling out with Leonie, when I had a crush on Dasan, when <strong>those</strong> people started hating me, when I became captain, when I had a crush on Ayush, when my phone got confiscated, when I got my phone back, and so on, up to this point. I could go on and on, but the list would never end. I don't think I could ever top this level of loyalty. I'm sorry if and when I couldn't be there for you. I've always had a commitment issue, but you've <strong>never </strong> made me feel bad about it. That's what's so amazing about you. You try your best to see the good in people. I remember when Kim and Ametei suddenly decided not to trust or like you anymore. Or when you were still with Joseph (ew) and you were talking about our friend group, and Gaayatri decided that you were talking shit about us. Or when Charissa just ghosted you everywhere because of her shitty ex boyfriend. I was often conflicted on whose side to take, and I decided on taking yours. That was probably one of the best decisions I've ever made. Sitting with you during History classes bitching about Zarine, ranting over stupid boys and girls, every inside joke, gossiping during Data Science classes, I will never ever forget these moments, because it's the little things that make this friendship so special. You are encouraging beyond belief. You believe in me, and when I don't quite remember who I am, you remind me. You always see the best in me and that is irreplaceable. Thank you for catching me when I fall, standing strong when I'm crumbling, holding my hand, and putting up with all my shit. You're one of the best things to ever happen to me and I'm so blessed I have you in my life. I couldn't imagine surviving school with anyone else and I'm so lucky that I got to be by your side everyday. And just remember, you'll get out of this hellhole and be an airhostess, a coach or whatever in the world you want to be, because you have my back, and I have full confidence in you.  We'll have cute chonky babies together, and they'll grow up to be the closest friends, just like us. And you'll finally find the best man you could ever ask for, because it's what you deserve. I'm rooting for you.<br><br>
+I will love you as a thief loves a gallery and as a crow loves a murder. I will love you as misfortune loves orphans, as fire loves innocence, and as justice loves to sit and watch while everything goes wrong. I will love you as a banana peel loves the shoe of a man. I will love you as a volunteer at the fire department loves rushing into burning buildings and as burning buildings love to chase them back out. Happy Valentine's Day, Angel. I'm really glad you were born and put by my side, and I'll miss you so much every single day, but I also can't wait to see what our future holds.
+<br><br>
+Always + forever,<br>
+Yana ❤︎
+  </p>
+</div>
+
+<script>
+function unlock() {
+  const password = "1111";  // Angel's password
+  const input = document.getElementById("passwordInput").value.trim();
+  const errorMessage = document.getElementById("error");
+  if (input === password) {
+    errorMessage.innerText = "";
+    document.getElementById("letter").classList.remove("hidden");
+  } else {
+    errorMessage.innerText = "Wrong password bih😛 Try again";
+  }
+}
+</script>
+
+</body>
+</html>

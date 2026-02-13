@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Raahi 💗</title>
+  <link href="https://font.download/font/cormorant-garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🔐 This letter is locked</h2>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+<button onclick="unlock()">Unlock</button>
+<p id="error"></p>
+
+<div id="letter" class="hidden paper">
+    <div class="paper letter">
+ <div class="polaroid">
+  <img src="images/raahi.jpeg">
+</div>
+
+    <h2>Dear Raahi,</h2>
+
+    <p>
+  I remember the first day I saw you in school. You were sitting near the windows in the classroom, and I knew you were Raima's friend, but I never had the courage to approach you and talk to you. When I was still in Loreto and you were still in Pine Mount, I would see you waiting outside school when I was on my way home, with your special captain tie. I just labelled you as my friend's friend, and never thought much of it. Never in my wildest dreams did I imagine we would be as close as we are now, but look where we landed.<br><br>
+Your presence in my life has been a gift beyond words. You've taught me so much about love, trust, and vulnerability. With you, I'm learning what it means to truly give myself to someone, not out of need, but out of a genuine desire to make you feel valued, loved, and enough - because you are. And I feel extremely lucky to be one of the people who gets to remind you of that every day. There are so many things I want to say, yet no words ever feel big enough to truly express how I feel about you. But I'll try, because you deserve to hear it, to know it, and to feel it, everyday. Your presence, firstly, because without it, I'd have nothing of you. You are there for me through the good and bad. Your thoughtfulness. You try to remember things that are important to me, and include me in your day. I adore your giving heart. The way you think so often of others' needs, and wanting to ensure they feel loved, and less alone. Your humanity is one of the best things about you. Our conversations about politics and the state of the world mean so much to me because I don't really have anyone else to let out all my emotions and feelings about the state of the world to, until you arrived. The way you allow me to be myself, and have allowed me to shed my mask over time. Your patience with me. I often wonder how you put up with me, you have the tolerance of a saint. You let me go absolutely wild and yet you're still in the most zen state ever. For your honesty, even when it's difficult. You've taught me to be gentle, reprimanded me when I do the wrong thing, guided me to make the right decisions, and not once did you think less of me. I adore your gentleness and consideration. How you think of me, and how your response might affect me in that moment. I adore your humour. Your silly jokes which don't make much sense are often accompanied by a quirky giggle. You cover your mouth with your hand, and your nose scrunches up, and the corner of your eyes crinkle. Your laugh is like the birds chirping in the early morning, or a baby's first laugh. It is wrapped with joy and tied with a pretty pink bow. And I know things haven't been too easy for you. I may not know what exactly it is, but it is evident in your scars. I've never pushed you about it, because I too know how it feels when the only escape you have is pain. I know you don't want to talk about it. I know it might reopen the wound. Take you back to the place you've been trying to put behind you. But I can assure you there is no need for you to cage up, as long as you have me. There is no need for you to go through whatever this is alone. No need for you to believe that your sadness is your doom. You can be vulnerable with me. Cry if you want to. Fall apart if you must. Just remember, I'm always there. Through thick and thin. Through fire and ice. Through heaven and hell. I don't really believe in any cosmic being ruling us, but if the universe was the one who decided to put you by my side, I will always believe. You were the reflection of myself that I needed to see, and the reflection of the good I wanted to be. And remember that I'm always rooting for you. You'll be the coolest psychologist ever, helping people, just like you want to, and taking the world by storm. You'll be the coolest mom, with cute fat babies, and a loving husband.
+<br><br>
+To me, you are a love that will last a lifetime, perhaps even beyond it. I think no matter where I am, I will always find this love lingering on the sidelines. It may get subtle as time goes by, but it will never disappear. For once in my life, I think I'm focusing on loving instead of wondering when this love will slip from my fingers as it always has, and it is all because of you. I have a feeling you'll last a lifetime and I find that I am not opposed to it. You have given me the ability to recognise love that exists all around me, after all. I'll continue finding you here, there and everywhere.<br><br>
+Forever + always, <br>
+Yana ❤︎
+        </p>
+  </div>
+
+  <script>
+function unlock() {
+  const password = "1592";  // Raahi's password
+  const input = document.getElementById("passwordInput").value.trim();
+  const errorMessage = document.getElementById("error");
+  if (input === password) {
+    errorMessage.innerText = "";
+    document.getElementById("letter").classList.remove("hidden");
+  } else {
+    errorMessage.innerText = "Wrong password bih😛 Try again";
+  }
+}
+</script>
+
+</body>
+</html>

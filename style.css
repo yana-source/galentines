@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Cormorant";
+    src: url("fonts/handwriting.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: url("fonts/CormorantGaramond-Bold.ttf");
+    font-weight: bold;
+}body {
+    font-family: 'Georgia', serif;
+    background: #fdc0d3;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #c9184a;
+}
+
+.intro {
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.envelopes {
+    display: grid;
+    grid-template-columns: repeat(6, 160px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.envelope {
+    background: url("images/envelope.png") no-repeat center/contain;
+    height: 120px;
+    width: 160px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.envelope:hover {
+    transform: scale(1.05);
+}
+
+.envelope span {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #fc8197;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#letter {
+    background: #fffaf0;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    animation: openLetter 0.6s ease forwards;
+}
+
+@keyframes openLetter {
+    from {
+        transform: scaleY(0);   
+        opacity: 0; 
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.paper {
+    background: #fffaf0;
+    padding: 40px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.paper {
+    font-family: "Cormorant", serif;
+    color: #3c280d;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.envelope {
+    text-decoration: none;
+    color: inherit;
+}
+
+.envelope:visited {
+    color: inherit;
+}
+
+.float-right {
+    float: right;
+    width: 120px;
+    margin: 0 0 10px 15px;
+    border-radius: 10px;
+}
+
+.polaroid {
+    background: white;
+    padding: 10px 10px 25px 10px;
+    width: 160px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transform: rotate(-4deg);
+    float: right;
+    margin: 0 0 15px 20px;
+}
+
+.polaroid img {
+    width: 100%;
+    display: block;
+}
+
+.polaroid {
+    transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale (1.05);
+}

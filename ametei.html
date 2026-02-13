@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ametei 💗</title>
+  <link href="https://font.download/font/cormorant-garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🔐 This letter is locked</h2>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+<button onclick="unlock()">Unlock</button>
+<p id="error"></p>
+
+<div id="letter" class="hidden paper">
+    <div class="paper letter">
+ <div class="polaroid">
+  <img src="images/ametei.jpeg">
+</div>
+
+    <h2>Dear Ametei,</h2>
+
+    <p>
+    I vividly remember the first day I saw you. It was a regular morning in 2017 in Ms. Syiemiong's English class. We had just learnt about verbs, and were being asked to complete sentences using them. As per usual, I was knocking it out of the park with my answers. Then she asked to make a sentence with the verb 'die', and that had me stumped. For the life of me, I could not figure out how to use it in a sentence. Then you raised your hand. You, with your bowl cut and plastic specs and that damn grey pinafore. You answered with a sentence about some cat jumping and almost dying, and were praised for being so smart. Ever since then, you were my 9-year-old self's sworn enemy. And what a ride it's been since then.<br><br>
+Growing up with you has been one of the greatest privileges of my life. From being the best of friends in the 5th grade because of our shared love over fountain pens, to talking about women's bushes in the 12th grade out of nowhere. You have literally been there all throughout, even if it was just in the background. We weren't as close friends in Loreto as we are now. I remember drifting away slowly because I tend to neglect my friendships, but we always remained amicable throughout the years. I remember when you first broke up with Nadia. You came to sit alongside Zuriel and I in class, and I held your hand as you explained everything. I wasn't comfortable with physical touch, but seeing you so down made me feel obliged to offer some sort of comfort. I remember when I was groped, and I cried day in and day out, and you offered me your handkerchief when I didn't have one. I probably still have that handkerchief somewhere. I remember when we both got selected as prefects. I remember walking together after every lunch break through the playground with the rest of the prefects to go to our classes, you in the 4th grade, me in the 3rd. I remember working together the day before our farewell in Tripura Castle to get the venue arranged. I remember when we came to collect our books from the tuck shop when we both got admitted in this school. I remember us staring at the rest of the kids on the ground. You said, "I need to be cool and mysterious if I wanna make friends." It was the 25th of May, 2024. I remember not having anyone on the first day of school to talk to, because you were in the other section. I remember meeting you during the lunch break and us having a discourse on what the school was like. I remember when we both were barely in class because we were in the Ethics Bowl team. I remember how we only had each other in this group of unknown people. I remember when we had a friend group, all of us, and what a disaster it was. I remember our fallout. I remember the mind games we played with each other. I remember when we both got selected as captains and decided to be amicable for the sake of it. I remember when you broke up with Arda (ew) because of his misbehaviour. I remember all the late-night talks, inside jokes, the fights, the selfies, ganging up against Garv, all of it. Because you are one person who makes every moment memorable. The truth is, if every person in my life were like you, it would be indelible. Beyond acceptance, I'd also be embraced, appreciated, celebrated. You deserve to know how grateful I am for your friendship. Quite literally, my life is better because you're in it. In your company, I'm free. Free to be me. Free to break. Free to bleed. Free to dream wildly. Free to be wrong. Free to show my vulnerabilities. Free to own my insecurities. Free to laugh and weep and feel every single human thing in between. I understand how rare it is to walk the roads of life alongside someone you can count on. In a world that's taught me to rely on nobody but myself, you are one of the few that I know, without a doubt, would be there. No matter what. Your friendship alone changed the trajectory of my life. You've made the journey into an adventure, more exciting, more colourful. Even if I could've made it this far without you, it wouldn't matter nearly as much. You've noticed some of the good hidden within me before even I could. No matter where I go, or what I'm facing, I know you'll be there right beside me. <br><br>
+I hope you have the courage to stand up for what you believe is right. That you are unapologetic about who you are and unafraid to use your voice. I hope you choose kindness and compassion and joy no matter where life takes you. I hope you know that you have the strength to move mountains when life isn't easy. I hope you know you are brave enough to weather any storm. That you carry the lessons you learn always. That you hold your head high and take each day as it comes. I hope you throw caution to the wind and work fearlessly to live a life that makes you proud. I hope you leave the world a better place than how you found it. That you forge your own path. I hope you remember that you swan, he frog, and that no man will ever compare to you. I hope you never forget that a butterfly is not born a butterfly and when your wings are ready, you dare to fall, because you deserve to fly, and I will be flying beside you.
+<br><br>
+Always + forever,<br>
+Yana ❤︎
+    </p>
+  </div>
+
+  <script>
+function unlock() {
+  const password = "1077";  // Ametei's password
+  const input = document.getElementById("passwordInput").value.trim();
+  const errorMessage = document.getElementById("error");
+  if (input === password) {
+    errorMessage.innerText = "";
+    document.getElementById("letter").classList.remove("hidden");
+  } else {
+    errorMessage.innerText = "Wrong password bih😛 Try again";
+  }
+}
+</script>
+
+</body>
+</html>
