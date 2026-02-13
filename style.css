@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Cormorant";
-    src: url("fonts/handwriting.ttf");
+    src: url("handwriting.ttf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Cormorant";
-    src: url("fonts/CormorantGaramond-Bold.ttf");
+    src: url("CormorantGaramond-Bold.ttf");
     font-weight: bold;
 }body {
     font-family: 'Georgia', serif;
@@ -32,7 +32,7 @@ h1 {
 }
 
 .envelope {
-    background: url("images/envelope.png") no-repeat center/contain;
+    background: url("envelope.png") no-repeat center/contain;
     height: 120px;
     width: 160px;
     cursor: pointer;
@@ -145,4 +145,5 @@ button {
 
 .polaroid:hover {
     transform: rotate(0deg) scale (1.05);
+
 }
